@@ -3,4 +3,6 @@ draft: false
 title: "déroulement (à déterminer)"
 ---
 
-![On vas être chaud](gifs/dancing.gif)
+<p align="center">
+  <img src="gifs/party.gif" />
+</p>
