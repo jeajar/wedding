@@ -1,0 +1,119 @@
+<main>
+    <div class="image image1"></div>
+
+
+    <section id="when" class="section light">
+        <div class="section__svg">
+            {{ partial "svgs/eucalyptus.svg" . }}
+        </div>
+        <h1 class="section__heading">Le mariage</h1>
+        <section class="section__split">
+            <div>
+                <p class="section__subheading">Quand</p>
+                <p class="section__text--bold">
+                    {{ .Params.when }}
+                </p>
+            </div>
+            <div>
+                <p class="section__subheading">Où ça?</p>
+                <p class="section__text--bold">
+                    {{ .Params.where.first }}
+                </p>
+                <p>
+                    {{ .Params.where.second }}
+                </p>
+            </div>
+        </section>
+        <!-- My CSS in this project is bad, man -->
+        <!-- <section style="display:flex;flex-direction:column;align-items:center;">
+            <h2 style="margin-top:2rem;" class="section__heading">Speeches</h2>
+
+            <h3 style="margin-top:2rem;" class="section__heading">Father of Bride</h3>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/XfCBomxy7K8"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+
+            <h3 style="margin-top:2rem;" class="section__heading">Best Man</h3>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/JzArXpZgaOs"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+
+            <h3 style="margin-top:2rem;" class="section__heading">Groom</h3>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/NPhbs9SEmVc"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+
+        </section> -->
+    </section>
+
+    <div class="image image2"></div>
+
+
+    <section id="order-of-events" class="section light">
+        <div class="section__svg">
+            {{ partial "svgs/eucalyptus.svg" . }}
+        </div>
+
+        {{ $t := .Site.GetPage "/section/order-of-events" }}
+        <h1 class="section__heading">{{$t.Params.title}}</h1>
+        <section class="section__md-content">
+            {{ $t.Content }}
+        </section>
+    </section>
+
+    <div class="image image3"></div>
+
+    <section id="travel-accommodation" class="section light">
+        <div class="section__svg">
+            {{ partial "svgs/eucalyptus.svg" . }}
+        </div>
+
+        {{ $t := .Site.GetPage "/section/travel-accommodation" }}
+        <h1 class="section__heading">{{$t.Params.title}}</h1>
+        <section class="section__md-content">
+            {{ $t.Content }}
+        </section>
+    </section>
+
+    <div class="image image1"></div>
+
+    <section id="dress" class="section light">
+        <div class="section__svg">
+            {{ partial "svgs/eucalyptus.svg" . }}
+        </div>
+
+        {{ $t := .Site.GetPage "/section/dress" }}
+        <h1 class="section__heading">{{$t.Params.title}}</h1>
+        <section class="section__md-content">
+            {{ $t.Content }}
+        </section>
+    </section>
+    <section id="facilities-accessibility" class="section light">
+        {{ $t := .Site.GetPage "/section/facilities-accessibility" }}
+        <h1 class="section__heading">{{$t.Params.title}}</h1>
+        <section class="section__md-content">
+            {{ $t.Content }}
+        </section>
+    </section>
+
+    <div class="image image2"></div>
+
+    <section id="more" class="section light" style="text-align:center;">
+        <div class="section__svg">
+            {{ partial "svgs/eucalyptus.svg" . }}
+        </div>
+        <p style="margin-bottom:1em;">Merci de visiter notre site web!</p>
+        <p style="margin-bottom:1em;">On a vraiment hâte de tous vous voir et de célébrer avec nos amis et les deux familles ensemble!!</p>
+        <p style="margin-bottom:1em;">En attendant, si vous avez des questions, n'hésitez pas à nous contacter à <a
+                href="mailto:info@achaquetorchonsaguenille.com">info@achaquetorchonsaguenille.com</a></p>
+        </p>
+        <p style="margin-bottom:1em;">Pour toute plainte, veuillez vous addreser directement à Bruno Desjardins à <a
+                href="mailto:info@achaquetorchonsaguenille.com">brunodesj@gmail.com</a></p>
+        </p>
+        </p>
+    </section>
+
+</main>

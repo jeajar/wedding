@@ -1,0 +1,43 @@
+{
+  "baseURL": "https://achaquetorchonsaguenille.com",
+  "languageCode": "fr-ca",
+  "title": "Le mariage à Audwey et Mamassime",
+  "show_comments": false,
+  "disableKinds": [
+    "sitemap",
+    "RSS"
+  ],
+  "markup": {
+    "defaultMarkdownHandler": "goldmark",
+    "goldmark": {
+      "extensions": {
+        "definitionList": true,
+        "footnote": true,
+        "linkify": true,
+        "linkifyProtocol": "https",
+        "strikethrough": true,
+        "table": true,
+        "taskList": true,
+        "typographer": true
+      },
+      "parser": {
+        "attribute": {
+          "block": false,
+          "title": true
+        },
+        "autoHeadingID": true,
+        "autoHeadingIDType": "github"
+      },
+      "renderer": {
+        "hardWraps": false,
+        "unsafe": true,
+        "xhtml": false
+      }
+    }
+  },
+  "params": {
+    "background_image_1": "https://s3.ca-central-1.wasabisys.com/public-jmax/wedding/grosses_faces_01.jpg",
+    "background_image_2": "https://s3.ca-central-1.wasabisys.com/public-jmax/wedding/grosses_faces_02.jpg",
+    "background_image_3": "https://s3.ca-central-1.wasabisys.com/public-jmax/wedding/grosses_faces_03.jpg"
+  }
+}
